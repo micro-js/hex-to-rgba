@@ -17,15 +17,18 @@ Convert a hexadecimal color code to an RGBA array
 ```js
 var hexToRgba = require('@f/hex-to-rgba')
 
+hexToRgba('#ffffff') // -> [255, 255, 255, 1]
+hexToRgba('000000') // -> [0, 0, 0, 1]
+hexToRgba('#eee') // -> [93, 93, 93, 1]
 ```
 
 ## API
 
-### hexToRgba(arg)
+### hexToRgba(hex)
 
-- `arg` -
+- `hex` - A hexadecimal color
 
-**Returns:**
+**Returns:** An array of `[R, G, B, alpha]`
 
 ## License
 
